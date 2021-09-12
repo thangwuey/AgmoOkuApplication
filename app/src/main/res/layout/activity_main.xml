@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/register_pic3" />
+
+
+    <Button
+        android:id="@+id/loginLoginButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/loginLogo"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="210dp"
+        android:text="Login"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/loginRegisterButton"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/loginLogo"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:text="SignUp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="Enter email"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginEmail"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="phone"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/loginPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:text="Log In"
+        android:textSize="20sp" />
+
+</RelativeLayout>

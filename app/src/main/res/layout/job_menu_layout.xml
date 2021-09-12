@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jobsList_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jobs Name"
+            android:textAlignment="center"
+            android:layout_marginLeft="130dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/jobsList_image"
+            android:layout_width="120dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="130dp"
+            android:layout_below="@id/jobsList_name">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Working Status:"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/jobsList_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Part Time or Full Time"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_below="@id/status"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/linearLayoutTime">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Working TIme"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/jobsList_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8am-5pm"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:layout_below="@id/status"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
